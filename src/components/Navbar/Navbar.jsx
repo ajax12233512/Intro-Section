@@ -4,6 +4,12 @@ import {ReactComponent as UpArrow} from '../../images/icon-arrow-up.svg'
 import {ReactComponent as DownArrow} from '../../images/icon-arrow-down.svg'
 import logo from '../../images/logo.svg'
 import navbarItems from './NavbarItems'
+import NavbarSubItems from './NavbarSubItems.jsx'
+import { featuresSubitems, companySubitems } from './NavbarSubitems';
+import Button from '../Button/Button'
+
+import './Navbar.css'
+
 function Navbar() {
   return (
     <div className='navbar'>
@@ -16,11 +22,12 @@ function Navbar() {
         {navbarItems.map(item => <div className='navbar__item'>
             {item.text}
              <UpArrow />
-            {item?.subitems ? item.subitems.map(item => <p>{item}</p>) : null}
+            {item?.subitems ? <NavbarSubItems subitems={item.subitems} /> : null}
           </div>)}
       </div>
       <div className='navbar-btns'>
-
+        <Button text='Login' />
+        <Button text='Register' />
       </div>
     </div>
   )
