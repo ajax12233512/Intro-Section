@@ -1,8 +1,16 @@
 import React from 'react'
 import './Button.css'
-const Button = ({text}) => {
+
+const Button = ({text, height}) => {
+
+  const style = {
+    backgroundColor: 'black',
+    height: height,
+    color: 'white'
+  }
+
   return (
-        <button className="Button">{text}</button>
+        <button style={style} className="Button">{text}</button>
   )
 }
 

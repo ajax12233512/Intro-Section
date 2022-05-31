@@ -3,6 +3,11 @@
     justify-content: space-around;
 }
 .navbar__items{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-btns{
     display: flex;
     justify-content: space-around;
 }

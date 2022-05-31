@@ -26,8 +26,8 @@ function Navbar() {
           </div>)}
       </div>
       <div className='navbar-btns'>
-        <Button text='Login' />
-        <Button text='Register' />
+        <Button text='Login' height='60px' />
+        <Button text='Register' height='60px'/>
       </div>
     </div>
   )
