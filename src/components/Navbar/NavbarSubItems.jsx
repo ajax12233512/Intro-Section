@@ -1,11 +1,13 @@
 import React from 'react'
 
 const style = {
-    margin: '1rem',
-    top: '0px',
-    right: '20px',
     position: 'relative',
-    backgroundColor: '#f5f5f5',
+    top: '10px',
+    right: '4px',
+    backgroundColor: 'white',
+    border: '1px solid black',
+    borderRadius: '5px',
+    boxShadow: '1px 1px 5px black',
     width: '100px',
     zIndex: '1'
 }

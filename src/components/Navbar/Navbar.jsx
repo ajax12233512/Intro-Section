@@ -20,14 +20,16 @@ function Navbar() {
       {/* Navbar Items */}
       <div className='navbar__items' >
         {navbarItems.map(item => <div className='navbar__item'>
+          <div className='navbar__item-text'>
             {item.text}
-             <UpArrow />
-            {item?.subitems ? <NavbarSubItems subitems={item.subitems} /> : null}
-          </div>)}
+            {item?.subitems ? <DownArrow /> : null}
+          </div>
+          {item?.subitems ? <NavbarSubItems subitems={item.subitems} /> : null}
+        </div>)}
       </div>
       <div className='navbar-btns'>
-        <Button text='Login' height='60px' />
-        <Button text='Register' height='60px'/>
+        <Button text='Login' height='auto' />
+        <Button text='Register' height='auto'/>
       </div>
     </div>
   )

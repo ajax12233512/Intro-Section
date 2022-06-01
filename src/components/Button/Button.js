@@ -4,7 +4,7 @@ import './Button.css'
 const Button = ({text, height}) => {
   
   const containerStyle = {
-      width: '50px',
+    //   width: '50px',
   }  
   
   const style = {
@@ -13,7 +13,7 @@ const Button = ({text, height}) => {
     color: 'black',
     borderRadius: '5px',
     border: '1px solid black',
-    width: '100%'
+    width: '100px',
   }
 
   return (

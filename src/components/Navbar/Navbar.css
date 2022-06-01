@@ -1,19 +1,28 @@
 .navbar{
     display: flex;
     justify-content: space-around;
-    height: 75px;
-    position: relative;
+    position: sticky;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 50px;
 }
+
+.navbar__logo{
+    width: auto;
+}
+
 .navbar__items{
     box-sizing: border-box;
-    width: 100%;
+    width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: baseline;
     align-items: center;
 }
 .navbar-btns{
+    width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
 }
 
@@ -30,5 +39,15 @@
 }
 
 .navbar__item{
-    width: 10%;
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+}
+
+
+.navbar__item-text{
+    width: 100%;
 }
