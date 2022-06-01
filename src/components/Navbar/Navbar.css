@@ -1,13 +1,34 @@
 .navbar{
     display: flex;
     justify-content: space-around;
+    height: 75px;
+    position: relative;
 }
 .navbar__items{
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .navbar-btns{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-btns:nth-child(1) button{
+    border: none;
+}
+
+.subitems{
+    display: none;
+}
+
+.navbar__item:hover .subitems{
+    display: block;
+}
+
+.navbar__item{
+    width: 10%;
 }
