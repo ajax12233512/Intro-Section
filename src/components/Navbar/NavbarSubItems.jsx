@@ -3,7 +3,7 @@ import React from 'react'
 const style = {
     position: 'relative',
     top: '10px',
-    right: '4px',
+    left: '10%',
     backgroundColor: 'white',
     border: '1px solid black',
     borderRadius: '5px',

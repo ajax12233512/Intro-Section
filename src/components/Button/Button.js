@@ -14,6 +14,10 @@ const Button = ({text, height}) => {
     borderRadius: '5px',
     border: '1px solid black',
     width: '100px',
+    margin: '0 auto',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   }
 
   return (

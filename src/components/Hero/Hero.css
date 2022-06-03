@@ -1,21 +1,38 @@
 .hero{ 
     display:  flex;
+    box-sizing: border-box;
+    padding: 2%;
+    height: auto;
 }
 
 .hero-left{
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;;
+    justify-content: center;
+    text-align: left;
 } 
 
-.hero-left button{
+.hero-left h1, .hero-left p, .hero-left div{
+    /* padding: 3% 0%; */
+}
 
+.hero-left h1{
+    font-size: 5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.hero-left p{
+    font-size: 1.5rem;
+    color: black;
 }
 
 .hero-right{
     width: 50%;
 }
+
 .hero-right img{
-    width: 100%;
+    width: 30vw;
+    height: 80vh;
 }
